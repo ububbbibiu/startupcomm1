@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: ubu
+  api_key: '795424426551618'
+  api_secret: 4a0yp8Ycw0X6VHC_fUNzNHjohQw
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: ubu
+  api_key: '795424426551618'
+  api_secret: 4a0yp8Ycw0X6VHC_fUNzNHjohQw
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: ubu
+  api_key: '795424426551618'
+  api_secret: 4a0yp8Ycw0X6VHC_fUNzNHjohQw
+  enhance_image_tag: true
+  static_image_support: false
