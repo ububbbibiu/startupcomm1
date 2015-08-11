@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  resources :answers do
+    member do
+      get :upvote
+      get :downvote
+    end
+  end
+
+  resources :questions do
+    member do
+      get :upvote
+      get :downvote
+    end
+  end
+  
   get 'admin', to: 'admin#index'
 
   resources :startups do

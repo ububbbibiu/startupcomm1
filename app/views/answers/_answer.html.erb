@@ -1,0 +1,21 @@
+<div class="panel panel-default">
+    <div class="panel-body">
+	    
+
+      <p><small>Answered by <%= answer.user.profile.name %></small></p>
+      <p><%= answer.content %></p>      
+      <p><strong>Upvotes: <%= answer.votes_for.size %></strong>
+      <% if user_signed_in? %>
+	      <% if current_user.voted_for? answer %>
+	      
+	        <%= link_to "Cancel Upvote", downvote_answer_path(answer), class: 'btn btn-danger' %>
+	      
+	      <% else %>
+	      
+	        <%= link_to "Upvote", upvote_answer_path(answer), class: 'btn btn-success' %>
+	      
+	      <% end %>
+	    <% end %></p>
+      <hr>
+    </div>
+  </div>
